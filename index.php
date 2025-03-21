@@ -34,19 +34,20 @@
       <br>
       <form action="answer.php" method="GET">
         <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="street_number">
+          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-of-triangle">
           <label class="mdl-textfield__label" for="sample2">Base of triangle in (cm)</label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
+        <br>
         <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" name="street_name">
+          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
           <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
         </div>
         <br>
         <main id="click-me " class="mdl-layout__content">
           <button id="click" type="submit"
             class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Enter
+            Calculate
           </button>
         </main>
       </form>

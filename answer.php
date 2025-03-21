@@ -26,24 +26,26 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Math Calculator</span>
+        <span class="mdl-layout-title">Area if triangle </span>
       </div>
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
       </div>
       <?php
-      $street_number = $_GET["street_number"];
-      ?>
-      <?php
-      $street_name = $_GET["street_name"];
-      echo "<p>Your address is: ". $street_number." ". $street_name."</p>";
+      $BaseOfTriangle = $_GET["base-of-triangle"];
+      $HeightOfTriangle = $_GET["height-of-triangle"];
+      $area = ($BaseOfTriangle * $HeightOfTriangle) /2 ;
+      echo "If a triangle  has base = " . $BaseOfTriangle . " cm and the height = " . $HeightOfTriangle . " cm:";
+      echo "<br />";
+      echo "<br />";
+      echo "The area of the triangle is " . $area . " cm².";
       ?>
       <br />
       <div class="page-content-answer">
         <a href="./index.php">Return ...</a>
       </div>
-      <br><br>
+      <br>
       <div class="right-image">
         <img src="./images/area_of_trinagle.png" alt="Calculation">
       </div>
