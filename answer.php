@@ -35,13 +35,13 @@
       <?php
       $BaseOfTriangle = $_GET["base-of-triangle"];
       $HeightOfTriangle = $_GET["height-of-triangle"];
-      $area = ($BaseOfTriangle * $HeightOfTriangle) /2 ;
+      $area = ($BaseOfTriangle * $HeightOfTriangle) / 2;
       echo "If a triangle  has base = " . $BaseOfTriangle . " cm and the height = " . $HeightOfTriangle . " cm:";
       echo "<br />";
       echo "<br />";
       echo "The area of the triangle is " . $area . " cm².";
       ?>
-      <br />
+      <br /> <br>
       <div class="page-content-answer">
         <a href="./index.php">Return ...</a>
       </div>
