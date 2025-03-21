@@ -30,7 +30,7 @@
       </div>
     </header>
     <div class="container">
-      <h3 class="dimatoins"> </h3>
+      <h3 class="dimatoins">Area of triangle </h3>
       <br>
       <form action="answer.php" method="GET">
         <div class="mdl-textfield mdl-js-textfield">
