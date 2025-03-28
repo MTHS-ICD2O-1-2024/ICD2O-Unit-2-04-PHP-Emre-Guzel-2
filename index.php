@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of triangle  " />
+  <meta name="description" content="Area of Trapizoid " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,45 +18,58 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Area of triangle </title>
+  <title>Area of Trapizoid </title>
 </head>
 
 <body>
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="js/script.js"></script>
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title"></span>
+        <span class="mdl-layout-title">Area of Trapizoid</span>
       </div>
     </header>
-    <div class="container">
-      <h3 class="dimatoins">Area of triangle </h3>
-      <br>
-      <form action="answer.php" method="GET">
-        <div class="mdl-textfield mdl-js-textfield">
-          <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-of-triangle">
-          <label class="mdl-textfield__label" for="sample2">Base of triangle in (cm)</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
-        </div>
-        <br>
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-          <input class="mdl-textfield__input" type="text" name="height-of-triangle">
-          <label class="mdl-textfield__label" for="sample3">Height of triangle (cm)</label>
-        </div>
-        <br>
-        <main id="click-me " class="mdl-layout__content">
-          <button id="click" type="submit"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Calculate
-          </button>
-        </main>
-      </form>
-      <p>Area is: </p>
-
-    </div>
+    <h2 class="formula">Formula</h2>
+    <p class="">A[(a + b)/2]xh</p>
+    <h3 class="dimatoins"> Please enter the base and height in cm </h3>
     <br>
+    <form action="answer.php" method="GET">
+      <div class="mdl-textfield mdl-js-textfield" id="base-a">
+        <p class="base-a"> Base A</p>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-a-of-trapizoid">
+        <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
+        <span>mm</span>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield" id="base-b">
+        <p class="base-a"> Base B</p>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-b-of-trapizoid">
+        <label class="mdl-textfield__label" for="base-b-of-trapizoid"></label>
+        <span>mm</span>
+        <br>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <div class="mdl-textfield mdl-js-textfield" id="height">
+        <p class="base-a"> Height</p>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-of-the-trapizoid">
+        <label class="mdl-textfield__label" for="height-of-the-trapizoid"></label>
+        <span>mm</span>
+        <span class="mdl-textfield__error">Input is not a number!</span>
+      </div>
+      <br>
+      <main id="click-me " class="mdl-layout__content">
+        <button id="click" type="submit" onclick="calculatoinOfAreaOfTrapizoid()"
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+          Enter
+        </button>
+      </main>
+    </form>
+    <p id="area">Area is: </p>
+
   </div>
-  <img class="Calculate" src="images/area_of_trinagle.png" alt="Street">
+  <br>
+  <img class="Calculate" src="images/trapezoid.svg" alt="Formula of rectengle">
 </body>
 
 </html>
